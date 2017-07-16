@@ -1,5 +1,3 @@
-import java.lang.System;
-
 class Boo
 {
     Boo(String s) { }
