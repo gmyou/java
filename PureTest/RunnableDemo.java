@@ -3,13 +3,17 @@ class RunnableDemo implements Runnable
     int x, y;
     public void run()
     {
-        for(int i = 0; i < 1000; i++)
-            synchronized(this)
+        for(int i = 0; i < 1000; i++) {
+        	synchronized(this)
             {
                 x = 12;
                 y = 12;
             }
-        System.out.print(x + " " + y + " ");
+        	System.out.println(i);
+        }
+        System.out.println("Start");
+        System.out.println(x + " " + y + " ");
+        System.out.println("End");
     }
     public static void main(String args[])
     {
