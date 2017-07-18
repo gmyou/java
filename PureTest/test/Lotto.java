@@ -4,7 +4,9 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Lotto {
 
@@ -26,10 +28,11 @@ public class Lotto {
 		
 		Arrays.sort(arrLottoNum);
 		
-		for(int i=1; i<7; i++) {
+		for(int i=0; i<6; i++) {
 			System.out.println(arrLottoNum[i]);
 		}
 		
+
 	}
 
 }
