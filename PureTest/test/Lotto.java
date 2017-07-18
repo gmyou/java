@@ -32,7 +32,21 @@ public class Lotto {
 			System.out.println(arrLottoNum[i]);
 		}
 		
-
+		System.out.println("Set");
+		
+		Set<Integer> set = new HashSet<Integer>();
+		
+		while ( set.size() < 6 ) {
+			int d = (int) (Math.random() * 45 + 1);
+			set.add(d);
+		}
+		
+		List<Integer> list = new ArrayList<Integer>(set);
+		Collections.sort(list);
+		
+		for (int i=0; i<list.size(); i++) {
+			System.out.println(list.get(i));
+		}
 	}
 
 }
